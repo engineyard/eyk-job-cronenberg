@@ -1,0 +1,9 @@
+# These are just a normal jobs that runs every minute
+# the scheduler is using standard cron format
+- name: job1
+  command: /job1.sh
+  when: "* * * * *"
+
+- name: job2
+  command: /job2.sh 
+  when: "* * * * *"
